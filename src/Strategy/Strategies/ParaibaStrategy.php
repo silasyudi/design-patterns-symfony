@@ -7,9 +7,9 @@ use App\Strategy\Constants\State;
 class ParaibaStrategy implements TaxStrategy
 {
 
-    function calculateTaxOnSalePrice(float $salePrices): float
+    function calculateTaxOnSalePrice(float $salePrice): float
     {
-        return $salePrices * 0.1;
+        return $salePrice * 0.1;
     }
 
     function getState(): State

@@ -7,9 +7,9 @@ use App\Strategy\Constants\State;
 class CearaStrategy implements TaxStrategy
 {
 
-    function calculateTaxOnSalePrice(float $salePrices): float
+    function calculateTaxOnSalePrice(float $salePrice): float
     {
-        return $salePrices * 0.09;
+        return $salePrice * 0.09;
     }
 
     function getState(): State

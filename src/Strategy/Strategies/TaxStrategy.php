@@ -6,7 +6,7 @@ use App\Strategy\Constants\State;
 
 interface TaxStrategy
 {
-    function calculateTaxOnSalePrice(float $salePrices): float;
+    function calculateTaxOnSalePrice(float $salePrice): float;
 
     function getState(): State;
 }

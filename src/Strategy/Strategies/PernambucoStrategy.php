@@ -7,9 +7,9 @@ use App\Strategy\Constants\State;
 class PernambucoStrategy implements TaxStrategy
 {
 
-    function calculateTaxOnSalePrice(float $salePrices): float
+    function calculateTaxOnSalePrice(float $salePrice): float
     {
-        return $salePrices * 0.11;
+        return $salePrice * 0.11;
     }
 
     function getState(): State
