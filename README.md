@@ -12,3 +12,9 @@ Demo project for Design Patterns on Symfony
 [Source Code](/src/Strategy)
 
 [Tests](/tests/Strategy)
+
+## 2. Template Method
+
+[Source Code](/src/TemplateMethod)
+
+[Tests](/tests/TemplateMethod)
