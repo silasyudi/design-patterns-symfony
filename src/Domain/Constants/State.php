@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Strategy\Constants;
+namespace App\Domain\Constants;
 
 enum State
 {

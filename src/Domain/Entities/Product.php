@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Strategy\Entities;
+namespace App\Domain\Entities;
 
-use App\Strategy\Constants\State;
+use App\Domain\Constants\State;
 
 class Product
 {

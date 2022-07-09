@@ -2,7 +2,7 @@
 
 namespace App\Strategy\Strategies;
 
-use App\Strategy\Constants\State;
+use App\Domain\Constants\State;
 
 class CearaStrategy implements TaxStrategy
 {

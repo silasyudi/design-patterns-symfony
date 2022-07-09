@@ -2,8 +2,8 @@
 
 namespace App\Tests\Strategy;
 
-use App\Strategy\Constants\State;
-use App\Strategy\Entities\Product;
+use App\Domain\Constants\State;
+use App\Domain\Entities\Product;
 use App\Strategy\TaxService;
 use InvalidArgumentException;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;

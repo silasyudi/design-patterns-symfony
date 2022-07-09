@@ -13,6 +13,9 @@ services:
         public: true
 
     _instanceof:
+        App\AbstractFactory\Factories\InvoiceAbstractFactory:
+            tags: [ name: 'abstractfactory.invoiceabstractfactory' ]
+
         App\Strategy\Strategies\TaxStrategy:
             tags: [ name: 'strategy.taxstrategy' ]
 
@@ -24,6 +27,11 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
+
+    App\AbstractFactory\InvoiceGeneratorWithStrategy:
+        arguments: [ !tagged_iterator 'abstractfactory.invoiceabstractfactory' ]
+
+    App\AbstractFactory\Factories\InvoiceAbstractFactory $paraibaInvoiceFactory: '@App\AbstractFactory\Factories\ParaibaInvoiceFactory'
 
     App\Strategy\TaxService:
         arguments: [ !tagged_iterator 'strategy.taxstrategy' ]
